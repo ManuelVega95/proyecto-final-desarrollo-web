@@ -1,0 +1,14 @@
+/* Fotos de los campeones de los últimos torneos de la página URBA.*/
+.campeonesUrba{
+    text-align: center;
+    .fotosUrba{
+        border: solid black 3px;
+        width: 300px;
+        height: 270px;
+        padding: 0,7rem;
+        display: inline-block;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        }
+}

@@ -1,0 +1,4 @@
+No sé por qué no pude hacer funcionar el responsive del grid de la página URBA. En el desafío anterior quedó bien, pero con el mismo código no lo hace.
+Vi en las devoluciones el tema de los colores. Por cuestiones de tiempo y problemas personales prioricé dedicarme 100% a lo que pedía la entrega y optimizar un poco más el sitio, pero la idea sería mejorar los colores para el desafío final.
+Mantuve las dos páginas con Bootstrap, pero seguro deje los navs con un mismo diseño para la entrega final.
+Las cards de la página Noticias quedan de distinto tamaño, quisiera que todas tengan un único tamaño pero no pude corregirlo. Posiblemente sea algo muy fácil de solucionar pero no lo pude hacer.

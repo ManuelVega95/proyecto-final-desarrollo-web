@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/* Colores principales a utilizar */
+/* Reiniciar el formato antes de arrancar*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: rgb(170, 218, 170);
+  font-family: "Times New Roman", Times, serif;
+  /* Textos generales */
+}
+body div .logo { /* logo de la página, que al apretarlo te lleva al inicio */
+  border-radius: 20%;
+  width: 200px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+body h1 {
+  color: rgb(223, 240, 230);
+  text-align: center;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: normal;
+}
+body h2 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h4 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(170, 218, 170);
+}
+body p {
+  padding: 20px;
+  line-height: 2;
+  margin: 0 auto;
+  text-align: justify;
+}
+body hr {
+  border: solid rgb(18, 37, 24) 1px;
+}
+
+/* Header */
+header {
+  background-color: rgb(18, 37, 24);
+  /*Barra de navegación con Responsive*/
+}
+header div .logo { /* logo de la página, que al apretarlo te lleva al inicio */
+  border-radius: 20%;
+  width: 200px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+header .pelota { /* logo de la pelota de rugby en las páginas con Bootstrap */
+  border-radius: 20%;
+  width: 100px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+header .bgVerde { /* fondo de la barra de navegación de la página Contacto */
+  background-color: rgb(125, 171, 148);
+}
+header .header {
+  color: rgb(170, 218, 170);
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 25px auto;
+  height: 40px;
+  text-align: center;
+  border: rgb(18, 37, 24);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header .header ul { /* le saqué el diseño predeterminado a las listas del menú*/
+  list-style-type: none;
+}
+header .header li {
+  display: inline-block;
+  text-align: center;
+}
+header .header li a {
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(207, 231, 207);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+header .header li a:hover {
+  color: rgb(174, 144, 144);
+  font-style: italic;
+}
+
+/* Main */
+.main {
+  background-color: rgb(170, 218, 170);
+  /* Textos */
+  /* Estilos de letra para palabras destacadas en textos */
+  /* Fotos */
+  /* Grid para la caja de los Clubes de la página URBA*/
+  /* css de las cards para la página Noticias */
+  /* css de las cards para la página URBA */
+  /* css Contacto + formulario */
+}
+.main div { /* Foto principal centrada */
+  text-align: center;
+}
+.main h2 {
+  text-align: center;
+  color: rgb(18, 37, 24);
+}
+.main body {
+  color: rgb(18, 37, 24);
+  background-color: rgb(170, 218, 170);
+  font-family: "Times New Roman", Times, serif;
+}
+.main p {
+  text-align: center;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main .noticias {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(170, 218, 170);
+}
+.main .historiaUrba {
+  text-align: center;
+  color: rgb(18, 37, 24);
+  font-style: italic;
+  padding: 10px;
+}
+.main .actualidadUrba {
+  text-align: center;
+  color: rgb(170, 218, 170);
+  background-color: rgb(18, 37, 24);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+}
+.main .t1 {
+  text-align: center;
+  color: rgb(35, 3, 3);
+}
+.main .urbaTitulo {
+  text-align: center;
+  color: rgb(18, 37, 24);
+}
+.main .bold {
+  font-weight: bold;
+  color: r rgb(18, 37, 24);
+}
+.main .italic {
+  font-style: italic;
+}
+.main .fotosIndex { /* fotos principales de la página Index*/
+  border: solid black(59, 14, 14) 3px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  height: 300px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.main .urba { /* logo y título de la URBA de la página Index*/
+  border: solid rgb(59, 14, 14) 3px;
+  height: 320px;
+  background-color: rgb(0, 19, 112);
+}
+.main .urba .urbaLogo {
+  border: solid rgb(255, 255, 255) 2px;
+  height: 300px;
+  margin: 10px;
+  display: inline-block;
+  opacity: 0.4;
+}
+.main .urba .urbaLogo:hover {
+  border: solid red 4px;
+  opacity: 1;
+}
+.main .fotosUrba {
+  border: solid black 3px;
+  width: 400px;
+  height: 270px;
+  padding: 0, 7rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.main .iframe { /* Iframe de la página Index */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.main .cajaClubes {
+  border: solid rgb(59, 14, 14) 3px;
+  background-color: black;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 200px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 5px;
+  grid-template-areas: "Alumni AtleticoDelRosario Belgrano BuenosAires Champagnat CUBA" "CASI Hindu Newman Regatas SIC SanLuis";
+  align-items: center;
+  justify-items: auto;
+  justify-content: center;
+}
+.main .cajaClubes .clubLogo {
+  background-color: black;
+  border: solid rgb(255, 255, 255) 2px;
+  height: 70px;
+  margin: 10px;
+  display: inline-block;
+  opacity: 0.4;
+}
+.main .cajaClubes .clubLogo:hover {
+  border: solid red 4px;
+  background-color: white;
+  opacity: 1;
+}
+.main .card {
+  width: 300px;
+  padding: 20px;
+  border: solid 2px black;
+  background-color: rgb(125, 171, 148);
+  margin: 20px;
+  display: inline-block;
+  opacity: 0.5;
+}
+.main .card:hover {
+  opacity: 4;
+  background-color: rgb(240, 240, 197);
+  border-radius: 10%;
+}
+.main .card .card__titulo {
+  text-align: center;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+.main .card .card__description {
+  line-height: 1.2;
+  font-size: 0.9rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main .card .card__cajaImagen {
+  text-align: center;
+}
+.main .card .card__img {
+  width: 200px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.main .card a:hover {
+  color: red;
+  font-style: italic;
+}
+.main .cardUrba {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  border: solid 2px black;
+  background-color: rgb(125, 171, 148);
+  margin: 20px;
+  display: inline-block;
+  opacity: 0.5;
+}
+.main .cardUrba:hover {
+  opacity: 4;
+  background-color: rgb(240, 240, 197);
+  border-radius: 10%;
+}
+.main .cardUrba .card__titulo {
+  text-align: center;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+.main .cardUrba .card__description {
+  line-height: 1.2;
+  font-size: 0.9rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main .cardUrba .card__cajaImagen {
+  text-align: center;
+}
+.main .cardUrba .card__logo {
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+}
+.main .cardUrba a:hover {
+  color: red;
+  font-style: italic;
+}
+.main .formulario {
+  color: rgb(18, 37, 24);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+.main .mb-3 {
+  padding: 10px;
+  margin: 0 auto;
+  text-align: left;
+}
+.main .boton {
+  padding: 10px;
+  border-radius: 90px;
+  border: solid black 3px;
+}
+.main .camposObligatorios {
+  font-style: italic;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main .container { /* Nosotros - Bootstrap Grid */
+  background-color: rgb(18, 37, 24);
+}
+
+/* Fotos de los campeones de los últimos torneos de la página URBA.*/
+.campeonesUrba {
+  text-align: center;
+}
+.campeonesUrba .fotosUrba {
+  border: solid black 3px;
+  width: 300px;
+  height: 270px;
+  padding: 0, 7rem;
+  display: inline-block;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+/* footer general --texto, logos (wsp, youtube, twitter, facebook, instagram - para esta entrega creé una clase única para todos los logos) y el responsive para cada página + hover en logos */
+footer {
+  background-color: rgb(194, 239, 225);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer a:hover {
+  color: red;
+  font-style: italic;
+}
+footer .logoRedes {
+  border-radius: 50%;
+  width: 25px;
+  opacity: 0.4;
+}
+footer .logoRedes:hover {
+  opacity: 1;
+}
+footer .redesSociales {
+  text-align: center;
+}
+
+/* Responsive para la caja con Clubes, de la página URBA. Cuando es grande la pantalla se ve normal con 6 columnas y 2 filas; achicando un poco se ven 4 columnas y 3 filas, después pasa a 3 y 4, y por último cuando es muy chica la pantalla, se ven 2 columnas de 6 filas. */
+@media screen and (max-width: 768px) {
+  .cajaClubes {
+    width: 100%;
+    height: 300px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "Alumni AtleticoDelRosario Belgrano" "BuenosAires Champagnat CUBA" "CASI Hindu Newman" "Regatas SIC SanLuis";
+  }
+}
+@media screen and (max-width: 570px) {
+  .cajaClubes {
+    width: 80vw;
+    height: 440px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "Alumni AtleticoDelRosario Belgrano" "BuenosAires Champagnat CUBA" "CASI Hindu Newman" "Regatas SIC SanLuis";
+  }
+}
+@media screen and (max-width: 460px) {
+  .cajaClubes {
+    width: 100vw;
+    height: 700px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "Alumni AtleticoDelRosario" "Belgrano BuenosAires" "Champagnat CUBA" "CASI Hindu" "Newman Regatas" "SIC SanLuis";
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
