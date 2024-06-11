@@ -29,6 +29,7 @@
         text-align: center;
         color: $verdeOscuro;
         font-style: italic;
+        font-size: 22px;
         padding: 10px;
     }
     .actualidadUrba{
@@ -101,50 +102,43 @@
         justify-content: center;
     }
     /* Grid para la caja de los Clubes de la página URBA*/
-    .cajaClubes{
+    .cajaClubes {
         border: solid rgb(59, 14, 14) 3px;
         background-color: black;
-        height: 100px;
-        flex-direction: row;
-        justify-content: space-between;
         width: 90%;
-        height: 200px;
         font-size: 2rem;
         text-align: center;
         margin: 20px auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 20px ;
-        row-gap: 5px;
-        grid-template-areas: 
-        "Alumni AtleticoDelRosario Belgrano BuenosAires Champagnat CUBA"
-        "CASI Hindu Newman Regatas SIC SanLuis";
         align-items: center;
         justify-items: auto;
         justify-content: center;
-        .clubLogo{
+        .clubLogo {
             background-color: black;
             border: solid rgb(255, 255, 255) 2px;
             height: 70px;
             margin: 10px;
             display: inline-block;
             opacity: .4;
-            &:hover{
-                border:solid red 4px;
+            &:hover {
+                border: solid red 4px;
                 background-color: white;
                 opacity: 1;
+                transition: all 0.3s;
             }
         }
     }
     /* css de las cards para la página Noticias */
     .card{
-        width: 300px;
+        width: 350px;
+        height: 600px;
         padding: 20px;
         border: solid 2px black;
         background-color: rgb(125, 171, 148);
-        margin: 20px;
+        margin: 10px;
         display: inline-block;
+        text-align: center;
+        overflow: hidden;
         opacity: 0.5;
         &:hover{
             opacity: 4;
@@ -180,12 +174,13 @@
     /* css de las cards para la página URBA */
     .cardUrba{
         width: 300px;
-        height: auto;
+        height: 600px;
         padding: 20px;
         border: solid 2px black;
         background-color: rgb(125, 171, 148);
-        margin: 20px;
+        margin: 5px;
         display: inline-block;
+        overflow: hidden;
         opacity: 0.5;
         &:hover{
             opacity: 4;
@@ -242,5 +237,8 @@
     }
     .container{/* Nosotros - Bootstrap Grid */
         background-color: $verdeOscuro;
+    }
+    .carousel-item img{
+        width: 400px;
     }
 }

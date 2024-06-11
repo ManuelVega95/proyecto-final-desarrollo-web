@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,41 +20,31 @@
 </head>
 <!--Menú con Bootstrap--->
 <body>
-    <header>
+  <header>
       <div>
-        <a href="../index.html">
-            <img class="logo" src="../fotos/Logo 2021 3.webp" alt="">
-        </a> 
-        <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
-        <h4>
-            Programa radial
-        </h4>
-        <nav class="navbar navbar-expand-lg bgVerde ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class = "pelota" src="../fotos/Pelota Rugby Urba.webp" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Menú
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../pages/nosotros.html">Nosotros</a></li>
-                      <li><a class="dropdown-item" href="../pages/noticias.html">Noticias</a></li>
-                      <li><a class="dropdown-item" href="../pages/urba.html">URBA</a></li>
-                      <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <a href="../index.html">
+              <img class="logo" src="../fotos/Logo 2021 3.webp" alt="homeLogo">
+          </a> 
+      </div>
+      <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
+      <h4>
+          Programa radial
+      </h4>
+      <nav>
+<div>
+  <section class="barraNav">
+    <nav>
+      <ul>
+        <li>
+          <li> <a href="../index.html">Home</a></li>
+          <li> <a href="./nosotros.html">Nosotros</a></li>
+          <li> <a href="./noticias.html">Noticias</a></li>
+          <li> <a href="./urba.html">URBA</a></li>
+          <li> <a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
     <hr>
         <main class ="main">
         <!--Formulario con Bootstrap--> 
@@ -64,12 +54,12 @@
                 <div class="mb-3">
                   <!--Agregar nombre--->
                     <label for="nombre" class="form-label">*Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre"  required><br><br> 
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre"  required>
                 </div>
                 <!--Agregar apellido--->
                 <div class="mb-3">
                     <label for="apellido" class="form-label">*Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Ingresá tu apellido" required><br><br>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresá tu apellido" required>
                 </div>
                 <!--Agregar teléfono--->
                 <div class="mb-3">
@@ -84,7 +74,7 @@
                 <!--Agregar comentario--->
                 <div class="mb-3">
                     <label for="comentario" >*Escribinos tu comentario</label>
-                    <textarea name="comentario" id="comentario" rows="3" cols="50" required></textarea> <br><br>
+                    <textarea name="comentario" id="comentario" rows="3" cols="50" required></textarea>
                 </div>
                 <!--Campos obligatorios con required--->
                 <p class="camposObligatorios">(*) campos obligatorios</p>

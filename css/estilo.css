@@ -51,13 +51,14 @@ body p {
   text-align: justify;
 }
 body hr {
-  border: solid rgb(18, 37, 24) 1px;
+  border: solid rgb(18, 37, 24) 1, 5px;
 }
 
 /* Header */
 header {
   background-color: rgb(18, 37, 24);
   /*Barra de navegación con Responsive*/
+  /* Responsive para la barra de navegación */
 }
 header div .logo { /* logo de la página, que al apretarlo te lleva al inicio */
   border-radius: 20%;
@@ -76,7 +77,7 @@ header .pelota { /* logo de la pelota de rugby en las páginas con Bootstrap */
 header .bgVerde { /* fondo de la barra de navegación de la página Contacto */
   background-color: rgb(125, 171, 148);
 }
-header .header {
+header .barraNav {
   color: rgb(170, 218, 170);
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -89,14 +90,14 @@ header .header {
   flex-direction: row;
   justify-content: center;
 }
-header .header ul { /* le saqué el diseño predeterminado a las listas del menú*/
+header .barraNav ul { /* le saqué el diseño predeterminado a las listas del menú*/
   list-style-type: none;
 }
-header .header li {
+header .barraNav li {
   display: inline-block;
   text-align: center;
 }
-header .header li a {
+header .barraNav li a {
   padding: 20px;
   margin: 10px;
   text-decoration: none;
@@ -104,9 +105,27 @@ header .header li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
-header .header li a:hover {
+header .barraNav li a:hover {
   color: rgb(174, 144, 144);
   font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  header .barraNav {
+    width: auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) {
+  header .barraNav {
+    width: auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+  header .barraNav {
+    width: auto;
+    flex-direction: column;
+  }
 }
 
 /* Main */
@@ -147,6 +166,7 @@ header .header li a:hover {
   text-align: center;
   color: rgb(18, 37, 24);
   font-style: italic;
+  font-size: 22px;
   padding: 10px;
 }
 .main .actualidadUrba {
@@ -219,20 +239,11 @@ header .header li a:hover {
 .main .cajaClubes {
   border: solid rgb(59, 14, 14) 3px;
   background-color: black;
-  height: 100px;
-  flex-direction: row;
-  justify-content: space-between;
   width: 90%;
-  height: 200px;
   font-size: 2rem;
   text-align: center;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 5px;
-  grid-template-areas: "Alumni AtleticoDelRosario Belgrano BuenosAires Champagnat CUBA" "CASI Hindu Newman Regatas SIC SanLuis";
   align-items: center;
   justify-items: auto;
   justify-content: center;
@@ -249,14 +260,18 @@ header .header li a:hover {
   border: solid red 4px;
   background-color: white;
   opacity: 1;
+  transition: all 0.3s;
 }
 .main .card {
-  width: 300px;
+  width: 350px;
+  height: 600px;
   padding: 20px;
   border: solid 2px black;
   background-color: rgb(125, 171, 148);
-  margin: 20px;
+  margin: 10px;
   display: inline-block;
+  text-align: center;
+  overflow: hidden;
   opacity: 0.5;
 }
 .main .card:hover {
@@ -289,12 +304,13 @@ header .header li a:hover {
 }
 .main .cardUrba {
   width: 300px;
-  height: auto;
+  height: 600px;
   padding: 20px;
   border: solid 2px black;
   background-color: rgb(125, 171, 148);
-  margin: 20px;
+  margin: 5px;
   display: inline-block;
+  overflow: hidden;
   opacity: 0.5;
 }
 .main .cardUrba:hover {
@@ -349,6 +365,9 @@ header .header li a:hover {
 .main .container { /* Nosotros - Bootstrap Grid */
   background-color: rgb(18, 37, 24);
 }
+.main .carousel-item img {
+  width: 400px;
+}
 
 /* Fotos de los campeones de los últimos torneos de la página URBA.*/
 .campeonesUrba {
@@ -388,13 +407,13 @@ footer .redesSociales {
 }
 
 /* Responsive para la caja con Clubes, de la página URBA. Cuando es grande la pantalla se ve normal con 6 columnas y 2 filas; achicando un poco se ven 4 columnas y 3 filas, después pasa a 3 y 4, y por último cuando es muy chica la pantalla, se ven 2 columnas de 6 filas. */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
   .cajaClubes {
-    width: 100%;
-    height: 300px;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "Alumni AtleticoDelRosario Belgrano" "BuenosAires Champagnat CUBA" "CASI Hindu Newman" "Regatas SIC SanLuis";
+    width: 100vw;
+    height: 700px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "Alumni AtleticoDelRosario" "Belgrano BuenosAires" "Champagnat CUBA" "CASI Hindu" "Newman Regatas" "SIC SanLuis";
   }
 }
 @media screen and (max-width: 570px) {
@@ -406,13 +425,22 @@ footer .redesSociales {
     grid-template-areas: "Alumni AtleticoDelRosario Belgrano" "BuenosAires Champagnat CUBA" "CASI Hindu Newman" "Regatas SIC SanLuis";
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .cajaClubes {
-    width: 100vw;
-    height: 700px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: "Alumni AtleticoDelRosario" "Belgrano BuenosAires" "Champagnat CUBA" "CASI Hindu" "Newman Regatas" "SIC SanLuis";
+    width: 60vw;
+    height: 400px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "Alumni AtleticoDelRosario Belgrano BuenosAires" "Champagnat CUBA CASI Hindu" "Newman Regatas SIC SanLuis";
+  }
+}
+@media screen and (min-width: 769px) {
+  .cajaClubes {
+    width: 90%;
+    height: auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "Alumni AtleticoDelRosario Belgrano BuenosAires Champagnat CUBA" "CASI Hindu Newman Regatas SIC SanLuis";
   }
 }
 
