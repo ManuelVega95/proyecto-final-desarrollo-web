@@ -9,40 +9,55 @@
 
 /* Body */
 body {
-  background-color: rgb(170, 218, 170);
-  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(213, 215, 215);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* Textos generales */
 }
-body div .logo { /* logo de la página, que al clickear te lleva al inicio */
+body div .logo { /* logo de la página, que al clickear te lleva al inicio. En todas las páginas, está también al pie de la página para redireccionar al Home */
   border-radius: 20%;
   width: 200px;
   padding: 10px;
   justify-content: center;
   display: flex;
+  margin: 0 auto;
 }
-body h1 {
-  color: rgb(223, 240, 230);
+body h1 { /* Título principal de la página */
+  color: rgb(5, 5, 54);
   text-align: center;
   padding: 10px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: normal;
+  font-size: 70px;
 }
-body h2 {
-  color: white;
+body h2 { /* Títulos secundarios de la página */
+  color: rgb(5, 5, 54);
   text-align: center;
   padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body h3 {
+body h3 { /* Texto del footer */
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
-body h4 {
+body h4 { /* Breve descripción del sitio en el header */
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   padding: 10px;
-  color: rgb(170, 218, 170);
+  color: rgb(5, 5, 54);
+}
+@media screen and (max-width: 570px) {
+  body h4 {
+    font-size: medium;
+    width: auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+  body h4 {
+    font-size: small;
+    width: auto;
+    flex-direction: column;
+  }
 }
 body p {
   padding: 20px;
@@ -53,7 +68,8 @@ body p {
 
 /* Header */
 header {
-  background-color: rgb(18, 37, 24);
+  background-color: white;
+  color: rgb(5, 5, 54);
   height: auto;
   display: grid;
   /*Barra de navegación con Responsive*/
@@ -65,26 +81,16 @@ header div .logo { /* logo de la página, que al apretarlo te lleva al inicio */
   padding: 10px;
   justify-content: center;
   display: flex;
-}
-header .pelota { /* logo de la pelota de rugby en las páginas con Bootstrap */
-  border-radius: 20%;
-  width: 100px;
-  padding: 10px;
-  justify-content: center;
-  display: flex;
-}
-header .bgVerde { /* fondo de la barra de navegación de la página Contacto */
-  background-color: rgb(125, 171, 148);
+  margin: 0 auto;
 }
 header .barraNav {
-  color: rgb(170, 218, 170);
+  color: rgb(5, 5, 54);
   list-style-type: none;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   margin: 25px auto;
   height: 40px;
   text-align: center;
-  border: rgb(18, 37, 24);
+  border: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -100,13 +106,13 @@ header .barraNav li a {
   padding: 20px;
   margin: 10px;
   text-decoration: none;
-  color: rgb(207, 231, 207);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(5, 5, 54);
   text-align: center;
 }
 header .barraNav li a:hover {
-  color: rgb(174, 144, 144);
+  color: rgb(160, 143, 194);
   font-style: italic;
+  transition: all 0, 5s;
 }
 @media screen and (max-width: 768px) {
   header .barraNav {
@@ -129,7 +135,7 @@ header .barraNav li a:hover {
 
 /* Main */
 .main {
-  background-color: rgb(170, 218, 170);
+  background-color: rgb(213, 215, 215);
   /* Textos */
   /* Estilos de letra para palabras destacadas en textos */
   /* Fotos */
@@ -138,6 +144,7 @@ header .barraNav li a:hover {
   /* css de las cards de los logos para la página URBA */
   /* css de las cards para la página URBA de la siguiente fecha */
   /* Tabla del Torneo actual del Top 12 de la página URBA.*/
+  /* Responsive para la tabla de posiciones, para pantalla estilo tablet y celular.*/
   /* Fotos de los campeones de los últimos torneos de la página URBA.*/
   /* css Contacto + formulario */
   /* Estilos para los distintos "hr" del sitio */
@@ -147,37 +154,35 @@ header .barraNav li a:hover {
 }
 .main h2 {
   text-align: center;
-  color: rgb(18, 37, 24);
+  color: rgb(5, 5, 54);
 }
 .main body {
   color: rgb(18, 37, 24);
   background-color: rgb(170, 218, 170);
-  font-family: "Times New Roman", Times, serif;
 }
 .main p {
   text-align: center;
   color: black;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .main .noticias {
   color: black;
   text-align: center;
   padding: 10px;
-  background-color: rgb(170, 218, 170);
-  font-family: verdana;
 }
 .main .historiaUrba {
   text-align: center;
   color: rgb(18, 37, 24);
   font-style: italic;
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px;
+  margin: 30px;
+  text-align: center;
+  display: block;
 }
 .main .actualidadUrba {
   text-align: center;
-  color: rgb(170, 218, 170);
-  background-color: rgb(18, 37, 24);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(213, 215, 215);
+  background-color: rgb(5, 5, 54);
   padding: 10px;
 }
 .main .t1 {
@@ -190,7 +195,6 @@ header .barraNav li a:hover {
 }
 .main .bold {
   font-weight: bold;
-  color: rgb(18, 37, 24);
 }
 .main .italic {
   font-style: italic;
@@ -210,10 +214,24 @@ header .barraNav li a:hover {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .main .fotosIndex {
+    width: 50%;
+    height: 150px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .main .fotosIndex {
+    width: 70%;
+    height: 80px;
+    font-size: 0.5rem;
+  }
+}
 .main .urba { /* logo y título de la URBA de la página Index*/
   border: solid rgb(59, 14, 14) 3px;
   height: 320px;
-  background-color: rgb(0, 19, 112);
+  background-color: rgb(9, 15, 44);
 }
 .main .urba .urbaLogo {
   border: solid rgb(255, 255, 255) 2px;
@@ -268,10 +286,11 @@ header .barraNav li a:hover {
 }
 .main .card {
   width: 350px;
-  height: 600px;
+  height: 700px;
   padding: 20px;
   border: solid 2px black;
-  background-color: rgb(125, 171, 148);
+  background-color: rgb(201, 220, 230);
+  font-size: 10px;
   margin: 10px;
   display: inline-block;
   text-align: center;
@@ -281,19 +300,18 @@ header .barraNav li a:hover {
 }
 .main .card:hover {
   opacity: 4;
-  background-color: rgb(240, 240, 197);
+  background-color: rgb(156, 177, 188);
   border-radius: 10%;
 }
 .main .card .card__titulo {
   text-align: center;
   padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
+  font-size: 25px;
 }
 .main .card .card__description {
   line-height: 1.2;
   font-size: 0.9rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .main .card .card__cajaImagen {
   text-align: center;
@@ -309,10 +327,11 @@ header .barraNav li a:hover {
 }
 .main .cardUrba {
   width: 300px;
-  height: 600px;
+  height: 700px;
   padding: 20px;
   border: solid 2px black;
-  background-color: rgb(125, 171, 148);
+  background-color: rgb(201, 220, 230);
+  font-size: 10px;
   margin: 5px;
   display: inline-block;
   overflow: hidden;
@@ -321,19 +340,18 @@ header .barraNav li a:hover {
 }
 .main .cardUrba:hover {
   opacity: 4;
-  background-color: rgb(240, 240, 197);
+  background-color: rgb(156, 177, 188);
   border-radius: 10%;
 }
 .main .cardUrba .card__titulo {
   text-align: center;
   padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
+  font-size: 20px;
 }
 .main .cardUrba .card__description {
   line-height: 1.2;
   font-size: 0.9rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .main .cardUrba .card__cajaImagen {
   text-align: center;
@@ -352,7 +370,7 @@ header .barraNav li a:hover {
   height: 150px;
   padding: 10px;
   border: solid 2px black;
-  background-color: rgb(125, 171, 148);
+  background-color: rgb(201, 220, 230);
   margin: 10px;
   display: inline-block;
   overflow: hidden;
@@ -365,7 +383,7 @@ header .barraNav li a:hover {
 }
 .main .cardFecha:hover {
   opacity: 1;
-  background-color: rgb(240, 240, 197);
+  background-color: rgb(156, 177, 188);
   border-radius: 10%;
 }
 .main .cardFecha .card__logo {
@@ -383,7 +401,6 @@ header .barraNav li a:hover {
 .main table {
   color: black;
   background-color: rgb(189, 183, 183);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   border: solid black 1, 5px;
   padding: 10px;
@@ -391,6 +408,7 @@ header .barraNav li a:hover {
   width: 95%;
   border-collapse: collapse;
   justify-content: center;
+  /* Responsive de la fecha disputada, para que no queden tan grandes las letras en tamaños más chicos de pantalla.*/
 }
 .main table th {
   background-color: #f2f2f2;
@@ -422,9 +440,38 @@ header .barraNav li a:hover {
   max-width: 50px;
   max-height: 50px;
 }
+@media (max-width: 768px) {
+  .main table .tablaBlanco and .tablaGris {
+    font-size: auto;
+  }
+}
+@media (max-width: 576px) {
+  .main table .tablaBlanco and .tablaGris {
+    font-size: auto;
+  }
+}
 .main .puestosTabla {
   font-style: italic;
   color: black;
+}
+@media (max-width: 768px) {
+  .main .logoTabla {
+    max-width: 25px;
+    max-height: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .main {
+    width: 100%;
+    font-size: 10px;
+  }
+  .main th, .main td {
+    padding: 3px;
+  }
+  .main .logoTabla {
+    max-width: 15px;
+    max-height: 15px;
+  }
 }
 .main .campeonesUrba {
   text-align: center;
@@ -440,7 +487,7 @@ header .barraNav li a:hover {
   justify-content: center;
 }
 .main .formulario {
-  color: rgb(18, 37, 24);
+  color: rgb(5, 5, 54);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 20px;
   padding: 20px;
@@ -458,10 +505,14 @@ header .barraNav li a:hover {
 .main .camposObligatorios {
   font-style: italic;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .main hr {
   border: solid black 1, 5px;
+}
+.main .hrHistoria {
+  border: solid rgb(13, 26, 2) 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 50px;
 }
 .main .bordeCard { /* Este "hr" se utiliza, como lo dice el nombre de la clase, para separar el título del texto en las cards */
   border: solid rgb(17, 2, 40) 3px;
@@ -470,9 +521,13 @@ header .barraNav li a:hover {
 
 /* footer general --texto, logos (wsp, youtube, twitter, facebook, instagram - para esta entrega creé una clase única para todos los logos) y el responsive para cada página + hover en logos */
 footer {
-  background-color: rgb(194, 239, 225);
+  background-color: rgb(5, 5, 54);
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  /* Responsive para achicar las imágenes y texto del Footer */
+  /* Responsive para la barra de navegación */
+}
+footer h3 {
+  color: white;
 }
 footer a:hover {
   color: red;
@@ -488,6 +543,70 @@ footer .logoRedes:hover {
 }
 footer .redesSociales {
   text-align: center;
+}
+footer .barraNav {
+  color: white;
+  list-style-type: none;
+  padding: 10px;
+  margin: 25px auto;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .barraNav ul { /* le saqué el diseño predeterminado a las listas del menú*/
+  list-style-type: none;
+}
+footer .barraNav li {
+  display: inline-block;
+  text-align: center;
+}
+footer .barraNav li a {
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(160, 143, 194);
+  text-align: center;
+}
+footer .barraNav li a:hover {
+  color: rgb(160, 143, 194);
+  font-style: italic;
+  transition: all 0, 5s;
+}
+@media (max-width: 576px) {
+  footer .logoRedes {
+    width: 15px;
+  }
+  footer footer {
+    font-size: small;
+  }
+}
+@media (max-width: 768px) {
+  footer .logoRedes {
+    width: 20px;
+  }
+  footer footer {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .barraNav {
+    width: auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) {
+  footer .barraNav {
+    width: auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+  footer .barraNav {
+    width: auto;
+    flex-direction: column;
+  }
 }
 
 /* Responsive para la caja con Clubes, de la página URBA. Cuando es grande la pantalla se ve normal con 6 columnas y 2 filas; achicando un poco se ven 4 columnas y 3 filas, después pasa a 3 y 4, y por último cuando es muy chica la pantalla, se ven 2 columnas de 6 filas. */
@@ -525,6 +644,16 @@ footer .redesSociales {
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "Alumni AtleticoDelRosario Belgrano BuenosAires Champagnat CUBA" "CASI Hindu Newman Regatas SIC SanLuis";
+  }
+}
+/* Responsive para el Bootstrap Grid de la página Nosotros. */
+@media (max-width: 768px) {
+  .col-4 h2 {
+    font-size: 1.5rem;
+  }
+  .col-4 p {
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
 }
 

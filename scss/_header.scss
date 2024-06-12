@@ -1,6 +1,7 @@
 /* Header */
 header{
-    background-color: $verdeOscuro;
+    background-color: $barraNav;
+    color: $textNav;
     height: auto;
     display: grid;
     div{
@@ -10,28 +11,18 @@ header{
             padding: 10px;
             justify-content: center;
             display: flex; 
+            margin: 0 auto;
         }
-    }
-    .pelota{ /* logo de la pelota de rugby en las páginas con Bootstrap */
-        border-radius: 20%;
-        width: 100px;
-        padding: 10px;
-        justify-content: center;
-        display: flex; 
-    }
-    .bgVerde{/* fondo de la barra de navegación de la página Contacto */
-        background-color: $contacto;
     }
     /*Barra de navegación con Responsive*/
     .barraNav{
-        color: $verdeClaro;
+        color: $textNav;
         list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
         padding: 10px;
         margin: 25px auto;
         height: 40px;
         text-align: center;
-        border: $verdeOscuro;
+        border: $barraNav;
         display: flex;
         flex-direction: row;
         justify-content:center;
@@ -45,12 +36,12 @@ header{
                 padding:20px;
                 margin: 10px;
                 text-decoration: none;
-                color:rgb(207, 231, 207);
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                color: $textNav;
                 text-align: center;
                 &:hover{
-                    color: rgb(174, 144, 144);
-                    font-style:italic; 
+                    color: $hoverNav;
+                    font-style: italic;
+                    transition: all 0,5s;
                 }
             }
         }
