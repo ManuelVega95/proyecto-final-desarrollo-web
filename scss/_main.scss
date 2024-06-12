@@ -24,6 +24,7 @@
         text-align: center;
         padding: 10px;
         background-color: $verdeClaro;
+        font-family: verdana
     }
     .historiaUrba{
         text-align: center;
@@ -50,7 +51,7 @@
     /* Estilos de letra para palabras destacadas en textos */
     .bold{
         font-weight: bold;
-        color: r$verdeOscuro;
+        color: $verdeOscuro;
     }
     .italic{
         font-style: italic;
@@ -140,6 +141,7 @@
         text-align: center;
         overflow: hidden;
         opacity: 0.5;
+        transition: opacity 0.3s ease; 
         &:hover{
             opacity: 4;
             background-color: $cards;
@@ -171,7 +173,7 @@
             }
         }
     }
-    /* css de las cards para la página URBA */
+    /* css de las cards de los logos para la página URBA */
     .cardUrba{
         width: 300px;
         height: 600px;
@@ -182,6 +184,7 @@
         display: inline-block;
         overflow: hidden;
         opacity: 0.5;
+        transition: opacity 0.3s ease; 
         &:hover{
             opacity: 4;
             background-color: $cards;
@@ -213,6 +216,103 @@
             }
         }
     }
+    /* css de las cards para la página URBA de la siguiente fecha */
+    .cardFecha{
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+        border: solid 2px black;
+        background-color: rgb(125, 171, 148);
+        margin: 10px;
+        display: inline-block;
+        overflow: hidden;
+        justify-content: center;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        &:hover{
+            opacity: 1;
+            background-color: $cards;
+            border-radius: 10%;
+        }
+        .card__logo{
+            width: 75px;
+            height: 75px;
+            padding: 5px;
+        }
+        a{
+            &:hover{
+                color:red;
+                font-style: italic;
+            }
+        }
+        .fechaUrba{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+    /* Tabla del Torneo actual del Top 12 de la página URBA.*/
+    table{
+        color: black;
+        background-color: rgb(189, 183, 183);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        border: solid black 1,5px;
+        padding: 10px;
+        margin: 10px;
+        width: 95%;
+        border-collapse: collapse;
+        justify-content: center;
+        th {
+            background-color: #f2f2f2;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+        }
+        th, td {
+            border: solid #150000 1px;
+            padding: 5px;
+            text-align: center;
+        }
+        .tablaBlanco{
+            background-color: rgb(196, 191, 191);
+            color: black;
+        }
+        .tablaGris{
+            background-color: grey;
+            color: black;
+        }
+        .puestoSemifinales{
+            background-color: rgb(3, 48, 3);
+            color: white;
+        }
+        .puestoDescenso{
+            background-color: red;
+            color: white;
+        }
+        .logoTabla{
+            max-width: 50px;
+            max-height: 50px;
+        }
+    }
+    .puestosTabla{
+        font-style: italic;
+        color: black;
+    }
+    /* Fotos de los campeones de los últimos torneos de la página URBA.*/
+    .campeonesUrba{
+        text-align: center;
+        .fotosUrba{
+            border: solid black 3px;
+            width: 300px;
+            height: 270px;
+            padding: 0,7rem;
+            display: inline-block;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            }
+    }
     /* css Contacto + formulario */
     .formulario{
         color: $verdeOscuro;
@@ -235,10 +335,12 @@
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .container{/* Nosotros - Bootstrap Grid */
-        background-color: $verdeOscuro;
+    /* Estilos para los distintos "hr" del sitio */
+    hr{
+        border: solid black 1,5px;
     }
-    .carousel-item img{
-        width: 400px;
+    .bordeCard{ /* Este "hr" se utiliza, como lo dice el nombre de la clase, para separar el título del texto en las cards */
+        border: solid $bordeCard 3px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 }

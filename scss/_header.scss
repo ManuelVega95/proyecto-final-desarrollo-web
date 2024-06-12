@@ -1,6 +1,8 @@
 /* Header */
 header{
     background-color: $verdeOscuro;
+    height: auto;
+    display: grid;
     div{
         .logo{ /* logo de la página, que al apretarlo te lleva al inicio */
             border-radius: 20%;
