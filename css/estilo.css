@@ -29,10 +29,21 @@ body h1 { /* Título principal de la página */
   font-style: normal;
   font-size: 70px;
 }
+@media screen and (max-width: 570px) {
+  body h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  body h1 {
+    font-size: 40px;
+  }
+}
 body h2 { /* Títulos secundarios de la página */
   color: rgb(5, 5, 54);
   text-align: center;
   padding: 10px;
+  font-weight: bold;
 }
 body h3 { /* Texto del footer */
   text-align: center;
@@ -41,20 +52,20 @@ body h3 { /* Texto del footer */
 body h4 { /* Breve descripción del sitio en el header */
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
   color: rgb(5, 5, 54);
 }
 @media screen and (max-width: 570px) {
   body h4 {
-    font-size: medium;
+    font-size: 15px;
     width: auto;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 460px) {
   body h4 {
-    font-size: small;
+    font-size: 12px;
     width: auto;
     flex-direction: column;
   }

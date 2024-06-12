@@ -20,11 +20,18 @@ body{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-style: normal;
         font-size: 70px;
+        @media screen and (max-width: 570px) {
+            font-size: 50px;
+        }
+        @media screen and (max-width: 460px) {
+            font-size: 40px;
+        }
     }
     h2{/* Títulos secundarios de la página */
         color: $texth2;
         text-align: center;
         padding: 10px;
+        font-weight:  bold;
     }
     h3{/* Texto del footer */
         text-align: center;
@@ -33,16 +40,16 @@ body{
     h4{/* Breve descripción del sitio en el header */
         text-align: center;
         font-family:'Courier New', Courier, monospace;
-        font-size: 20px;
+        font-size: 30px;
         padding: 10px;
         color: $textNav;
         @media screen and (max-width: 570px) {
-            font-size: medium;
+            font-size: 15px;
             width: auto;
             flex-direction: column;
         }
         @media screen and (max-width: 460px) {
-            font-size: small;
+            font-size: 12px;
             width: auto;
             flex-direction: column;
         }
