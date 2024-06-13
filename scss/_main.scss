@@ -3,6 +3,12 @@
     background-color: $fondo;
     div{ /* Foto principal centrada */
         text-align: center;
+        @media (max-width: 768px) {
+            width: auto;
+        }
+        @media (max-width: 576px) {
+            width: auto;
+        }
     }
     /* Textos */
     h2{
@@ -121,6 +127,12 @@
         align-items: center;
         justify-items: auto;
         justify-content: center;
+        @media (max-width: 768px) {
+            width: 85%;
+        }
+        @media (max-width: 576px) {
+            width: 80%;
+        }
         .clubLogo {
             background-color: black;
             border: solid rgb(255, 255, 255) 2px;
@@ -133,6 +145,12 @@
                 background-color: white;
                 opacity: 1;
                 transition: all 0.3s;
+            }
+            @media (max-width: 768px) {
+                height: 50px;
+            }
+            @media (max-width: 576px) {
+                height: 40px;
             }
         }
     }
@@ -270,15 +288,27 @@
         width: 95%;
         border-collapse: collapse;
         justify-content: center;
+        @media (max-width: 768px) {
+            display: block;
+            }
+        @media (max-width: 576px) {
+            display: block;
+        }
         th {
             background-color: #f2f2f2;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: large;
+            @media (max-width: 768px) {
+                font-size: 5px;
+                }
         }
         th, td {
             border: solid #150000 1px;
             padding: 5px;
             text-align: center;
+            @media (max-width: 768px) {
+                font-size: 5px;
+                }
         }
         .tablaBlanco{
             background-color: rgb(196, 191, 191);
@@ -299,6 +329,14 @@
         .logoTabla{
             max-width: 50px;
             max-height: 50px;
+            @media (max-width: 768px) {
+                max-width: 20px;
+                max-height: 20px;
+                }
+            @media (max-width: 576px) {
+                max-width: 20px;
+                max-height: 20px;
+            }
         }
         /* Responsive de la fecha disputada, para que no queden tan grandes las letras en tamaños más chicos de pantalla.*/
         @media (max-width: 768px) {
@@ -381,5 +419,13 @@
     .bordeCard{ /* Este "hr" se utiliza, como lo dice el nombre de la clase, para separar el título del texto en las cards */
         border: solid $bordeCard 3px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .galeria{
+        @media (max-width: 768px) {
+            width: auto;
+            }
+        @media (max-width: 576px) {
+            width: auto;
+        }
     }
 }

@@ -163,6 +163,16 @@ header .barraNav li a:hover {
 .main div { /* Foto principal centrada */
   text-align: center;
 }
+@media (max-width: 768px) {
+  .main div {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .main div {
+    width: auto;
+  }
+}
 .main h2 {
   text-align: center;
   color: rgb(5, 5, 54);
@@ -281,6 +291,16 @@ header .barraNav li a:hover {
   justify-items: auto;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .main .cajaClubes {
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  .main .cajaClubes {
+    width: 80%;
+  }
+}
 .main .cajaClubes .clubLogo {
   background-color: black;
   border: solid rgb(255, 255, 255) 2px;
@@ -294,6 +314,16 @@ header .barraNav li a:hover {
   background-color: white;
   opacity: 1;
   transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .main .cajaClubes .clubLogo {
+    height: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .main .cajaClubes .clubLogo {
+    height: 40px;
+  }
 }
 .main .card {
   width: 350px;
@@ -421,15 +451,35 @@ header .barraNav li a:hover {
   justify-content: center;
   /* Responsive de la fecha disputada, para que no queden tan grandes las letras en tamaños más chicos de pantalla.*/
 }
+@media (max-width: 768px) {
+  .main table {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .main table {
+    display: block;
+  }
+}
 .main table th {
   background-color: #f2f2f2;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: large;
 }
+@media (max-width: 768px) {
+  .main table th {
+    font-size: 5px;
+  }
+}
 .main table th, .main table td {
   border: solid #150000 1px;
   padding: 5px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .main table th, .main table td {
+    font-size: 5px;
+  }
 }
 .main table .tablaBlanco {
   background-color: rgb(196, 191, 191);
@@ -450,6 +500,18 @@ header .barraNav li a:hover {
 .main table .logoTabla {
   max-width: 50px;
   max-height: 50px;
+}
+@media (max-width: 768px) {
+  .main table .logoTabla {
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .main table .logoTabla {
+    max-width: 20px;
+    max-height: 20px;
+  }
 }
 @media (max-width: 768px) {
   .main table .tablaBlanco and .tablaGris {
@@ -528,6 +590,16 @@ header .barraNav li a:hover {
 .main .bordeCard { /* Este "hr" se utiliza, como lo dice el nombre de la clase, para separar el título del texto en las cards */
   border: solid rgb(17, 2, 40) 3px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .main .galeria {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .main .galeria {
+    width: auto;
+  }
 }
 
 /* footer general --texto, logos (wsp, youtube, twitter, facebook, instagram - para esta entrega creé una clase única para todos los logos) y el responsive para cada página + hover en logos */
