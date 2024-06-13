@@ -52,14 +52,14 @@ body h3 { /* Texto del footer */
 }
 @media screen and (max-width: 570px) {
   body h3 {
-    font-size: 15px;
+    font-size: 12px;
     width: auto;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 460px) {
   body h3 {
-    font-size: 12px;
+    font-size: 10px;
     width: auto;
     flex-direction: column;
   }
@@ -91,6 +91,7 @@ body p {
   line-height: 2;
   margin: 0 auto;
   text-align: justify;
+  font-size: 20px;
 }
 
 /* Header */
@@ -106,29 +107,29 @@ header {
 header .top {
   background-color: rgb(213, 215, 215);
 }
-header div .logo { /* logo de la página, que al apretarlo te lleva al inicio */
+header .top .logo { /* logo de la página, que al apretarlo te lleva al inicio */
   border-radius: 20%;
-  width: 200px;
+  width: 300px;
   padding: 10px;
   justify-content: center;
   display: flex;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-  header div .logo {
-    width: 125px;
+  header .top .logo {
+    width: 250px;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 570px) {
-  header div .logo {
-    width: 100px;
+  header .top .logo {
+    width: 220px;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 460px) {
-  header div .logo {
-    width: 70px;
+  header .top .logo {
+    width: 180px;
     flex-direction: column;
   }
 }
@@ -151,6 +152,25 @@ header .navHeader .list_icon {
 header .navHeader .logoNav {
   width: 110px;
   height: 100px;
+  /* Responsive para la barra de navegación del footer */
+}
+@media screen and (max-width: 768px) {
+  header .navHeader .logoNav {
+    width: 95px;
+    height: 85px;
+  }
+}
+@media screen and (max-width: 570px) {
+  header .navHeader .logoNav {
+    width: 80px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 460px) {
+  header .navHeader .logoNav {
+    width: 65px;
+    height: 55px;
+  }
 }
 header .navHeader a {
   text-decoration: none;
@@ -313,6 +333,7 @@ header .barraNav li a:hover {
 .main p {
   text-align: center;
   color: black;
+  font-size: 20px;
 }
 .main .noticias {
   color: black;
@@ -321,7 +342,7 @@ header .barraNav li a:hover {
 }
 .main .historiaUrba {
   text-align: center;
-  color: rgb(18, 37, 24);
+  color: rgb(5, 5, 54);
   font-style: italic;
   font-size: 20px;
   padding: 10px;
@@ -341,7 +362,7 @@ header .barraNav li a:hover {
 }
 .main .urbaTitulo {
   text-align: center;
-  color: rgb(18, 37, 24);
+  color: rgb(5, 5, 54);
 }
 .main .bold {
   font-weight: bold;
@@ -351,7 +372,8 @@ header .barraNav li a:hover {
 }
 .main .fotosIndex { /* fotos principales de la página Index*/
   border: solid black(59, 14, 14) 3px;
-  height: 70px;
+  width: 200px;
+  height: 200px;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -366,15 +388,15 @@ header .barraNav li a:hover {
 }
 @media (max-width: 768px) {
   .main .fotosIndex {
-    width: 70%;
-    height: 150px;
+    height: 170px;
+    width: 90px;
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
   .main .fotosIndex {
-    width: 60%;
-    height: 80px;
+    height: 150px;
+    width: 80px;
     font-size: 0.5rem;
   }
 }

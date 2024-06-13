@@ -37,12 +37,12 @@ body{
         text-align: center;
         color: $texth3;
         @media screen and (max-width: 570px) {
-            font-size: 15px;
+            font-size: 12px;
             width: auto;
             flex-direction: column;
         }
         @media screen and (max-width: 460px) {
-            font-size: 12px;
+            font-size: 10px;
             width: auto;
             flex-direction: column;
         }
@@ -66,9 +66,10 @@ body{
         }
     }
     p{
-        padding:20px;
+        padding: 20px;
         line-height: 2;
         margin: 0 auto;
         text-align: justify;
+        font-size: 20px;
     }
 }

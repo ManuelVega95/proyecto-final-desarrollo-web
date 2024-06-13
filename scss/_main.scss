@@ -25,6 +25,7 @@
     p{
         text-align: center;
         color: black;
+        font-size: 20px;
     }
     .noticias{ 
         color:black;
@@ -33,7 +34,7 @@
     }
     .historiaUrba{
         text-align: center;
-        color: $verdeOscuro;
+        color: $textNav;
         font-style: italic;
         font-size: 20px;
         padding: 10px;
@@ -53,7 +54,7 @@
     }
     .urbaTitulo{
         text-align: center;
-        color: $verdeOscuro;
+        color: $textNav;
     }
     /* Estilos de letra para palabras destacadas en textos */
     .bold{
@@ -65,7 +66,8 @@
     /* Fotos */
     .fotosIndex{ /* fotos principales de la página Index*/
         border: solid black(59, 14, 14) 3px;
-        height: 70px;
+        width: 200px;
+        height: 200px;
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -78,13 +80,13 @@
         display: flex;
         justify-content: center;
         @media (max-width: 768px) {
-            width: 70%;
-            height: 150px;
+            height: 170px;
+            width: 90px;
             font-size: 1rem;
         }
         @media (max-width: 576px) {
-            width: 60%;
-            height: 80px;
+            height: 150px;
+            width: 80px;
             font-size: 0.5rem;
         }
     }
