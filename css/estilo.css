@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Colores principales a utilizar */
+/* Colores utilizados anteriormente */
 /* Reiniciar el formato antes de arrancar*/
 * {
   margin: 0;
@@ -162,15 +163,16 @@ header .barraNav li a:hover {
 }
 .main div { /* Foto principal centrada */
   text-align: center;
+  height: auto;
 }
 @media (max-width: 768px) {
   .main div {
-    width: auto;
+    height: auto;
   }
 }
 @media (max-width: 576px) {
   .main div {
-    width: auto;
+    height: auto;
   }
 }
 .main h2 {
@@ -445,7 +447,7 @@ header .barraNav li a:hover {
   text-align: center;
   border: solid black 1, 5px;
   padding: 10px;
-  margin: 10px;
+  margin: 0 auto;
   width: 95%;
   border-collapse: collapse;
   justify-content: center;
@@ -454,22 +456,19 @@ header .barraNav li a:hover {
 @media (max-width: 768px) {
   .main table {
     display: block;
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
   .main table {
     display: block;
+    font-size: 15px;
   }
 }
 .main table th {
   background-color: #f2f2f2;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: large;
-}
-@media (max-width: 768px) {
-  .main table th {
-    font-size: 5px;
-  }
+  font-size: 25px;
 }
 .main table th, .main table td {
   border: solid #150000 1px;
@@ -515,12 +514,14 @@ header .barraNav li a:hover {
 }
 @media (max-width: 768px) {
   .main table .tablaBlanco and .tablaGris {
-    font-size: auto;
+    font-size: 20px;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
   .main table .tablaBlanco and .tablaGris {
-    font-size: auto;
+    font-size: 15px;
+    text-align: center;
   }
 }
 .main .puestosTabla {
