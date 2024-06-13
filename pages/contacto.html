@@ -21,7 +21,8 @@
 <body>
     <!--Barra de Navegación-->
   <header>
-    <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
+    <div class="top">
+      <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
     <div>
       <a href="../index.html">
         <img class="logo" src="../fotos/Logo 2021 3.webp" alt="homeLogo">
@@ -30,17 +31,33 @@
     <h4>
       Toda la información del rugby nacional e internacional
     </h4>
-    <nav class="barraNav">
-      <ul>
-        <li> <a href="../index.html">Home</a></li>
-        <li> <a href="./nosotros.html">Nosotros</a></li>
-        <li> <a href="./noticias.html">Noticias</a></li>
-        <li> <a href="./urba.html">URBA</a></li>
-        <li> <a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    </div>
+    <div>
+      <nav class="navHeader">
+          <a href="../index.html">
+              <img class="logoNav" src="../fotos/Pelota Rugby Urba.webp" alt="logoNav">
+          </a>
+          <label class="label_hamburguesa" for="menu_hamburguesa"> <!--Creo que dijeron que hay que evitar usar css en el html, pero no encontré otra manera de que funcionara el cambio de tamaño. Si borraba el width, height y fill de acá, no aparecía por más que lo pusiera en el scss-->
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              width="30"  
+              height="40" 
+              fill="currentColor" 
+              class="list_icon" 
+              viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+          </label> 
+          <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+          <ul class="ul_links">
+              <li class="li_links"> <a href="../index.html" class="link">Home</a></li>
+              <li> <a href="./nosotros.html" class="link">Nosotros</a></li>
+              <li> <a href="./noticias.html" class="link">Noticias</a></li>
+              <li> <a href="./urba.html" class="link">URBA</a></li>
+              <li> <a href="./contacto.html" class="link">Contacto</a></li>
+          </ul>
+      </nav>
+  </div>
   </header>
-    <hr>
         <main class ="main">
         <!--Formulario con Bootstrap--> 
         <div class="formulario">
@@ -76,12 +93,10 @@
                 <button type="submit" class="btn btn-success">Enviar</button>
             </form>
     </main>
-    <hr>
     <footer class="footer">
         <!--Footer-->
         <h3>Contactanos al 011******  <img class = "logoRedes" src="../fotos/wsp.webp" alt="wsp"> </h3>
         <h3>O podés enviándonos un mail a urbanizados@hotmail.com</h3>
-        <hr>
         <h3>Seguinos en nuestras redes sociales:
             <div class="redesSociales">
               <img class="logoRedes" src="../fotos/tw.webp" alt="Twitter"> <a href="https://www.twitter.com" target="_blank">Twitter</a>
@@ -90,7 +105,7 @@
               <img class="logoRedes" src="../fotos/yt.webp" alt="YouTube"> <a href="https://www.youtube.com" target="_blank">Youtube</a>
             </div>
         </h3>
-        <nav class="barraNav">
+        <nav class="navFooter">
           <ul>
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="./nosotros.html">Nosotros</a></li>

@@ -50,12 +50,27 @@ body h3 { /* Texto del footer */
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 570px) {
+  body h3 {
+    font-size: 15px;
+    width: auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+  body h3 {
+    font-size: 12px;
+    width: auto;
+    flex-direction: column;
+  }
+}
 body h4 { /* Breve descripción del sitio en el header */
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   padding: 10px;
   color: rgb(5, 5, 54);
+  font-weight: bold;
 }
 @media screen and (max-width: 570px) {
   body h4 {
@@ -84,8 +99,12 @@ header {
   color: rgb(5, 5, 54);
   height: auto;
   display: grid;
-  /*Barra de navegación con Responsive*/
-  /* Responsive para la barra de navegación */
+  /*Barra de navegación principal con menú hamburguesa en responsive, tuve que ver un tutorial para que quede bien porque siempre tenía algún error cuando lo intentaba. Así y todo en las páginas con Bootstrap queda cortado el texto*/
+  /*Barra de navegación del footer, usada anteriormente en el header también*/
+  /* Responsive para la barra de navegación del footer */
+}
+header .top {
+  background-color: rgb(213, 215, 215);
 }
 header div .logo { /* logo de la página, que al apretarlo te lleva al inicio */
   border-radius: 20%;
@@ -94,6 +113,102 @@ header div .logo { /* logo de la página, que al apretarlo te lleva al inicio */
   justify-content: center;
   display: flex;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  header div .logo {
+    width: 125px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) {
+  header div .logo {
+    width: 100px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+  header div .logo {
+    width: 70px;
+    flex-direction: column;
+  }
+}
+header .navHeader {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0;
+}
+header .navHeader .list_icon {
+  color: rgb(5, 5, 54);
+  cursor: pointer;
+  width: "30";
+  height: "40";
+}
+header .navHeader .logoNav {
+  width: 110px;
+  height: 100px;
+}
+header .navHeader a {
+  text-decoration: none;
+}
+header .navHeader ol, header .navHeader ul {
+  list-style: none;
+}
+header .navHeader .menu_hamburguesa {
+  display: none;
+}
+header .navHeader .menu_hamburguesa:checked + .ul_links {
+  height: 100px;
+}
+header .navHeader .ul_links {
+  width: 100%;
+  position: absolute;
+  top: auto;
+  left: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0, 5rem;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+header .navHeader .ul_links .link {
+  font-size: auto;
+  color: rgb(5, 5, 54);
+  font-weight: bold;
+}
+header .navHeader .ul_links .link:hover {
+  color: rgb(160, 143, 194);
+  transition: all 0, 5s;
+}
+@media (min-width: 768px) {
+  header .navHeader .label_hamburguesa {
+    display: none;
+    transition: all 0.3s;
+  }
+  header .navHeader .ul_links {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  header .navHeader .link {
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    padding: 0.2rem 0.7rem;
+  }
+  header .navHeader .link:hover {
+    color: rgb(160, 143, 194);
+    transition: all 0, 5s;
+  }
 }
 header .barraNav {
   color: rgb(5, 5, 54);
@@ -106,6 +221,11 @@ header .barraNav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+header .barraNav .logoNav { /* logo de la barra de navegación */
+  border-radius: 20%;
+  width: 50px;
+  text-align: left;
 }
 header .barraNav ul { /* le saqué el diseño predeterminado a las listas del menú*/
   list-style-type: none;
@@ -159,9 +279,10 @@ header .barraNav li a:hover {
   /* Responsive para la tabla de posiciones, para pantalla estilo tablet y celular.*/
   /* Fotos de los campeones de los últimos torneos de la página URBA.*/
   /* css Contacto + formulario */
-  /* Estilos para los distintos "hr" del sitio */
+  /* Este "hr" se utiliza, como lo dice el nombre de la clase, para separar el título del texto en las cards */
+  /* Responsive para buscar mejorar el carrusel de la página Nosotros, pero queda siempre mal. Se me hizo muy difícil modificar el css de Bootstrap para que quede como yo quisiera */
 }
-.main div { /* Foto principal centrada */
+.main div { /* Foto principal del Home centrada */
   text-align: center;
   height: auto;
 }
@@ -179,9 +300,15 @@ header .barraNav li a:hover {
   text-align: center;
   color: rgb(5, 5, 54);
 }
-.main body {
-  color: rgb(18, 37, 24);
-  background-color: rgb(170, 218, 170);
+@media screen and (max-width: 570px) {
+  .main h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .main h2 {
+    font-size: 30px;
+  }
 }
 .main p {
   text-align: center;
@@ -239,14 +366,14 @@ header .barraNav li a:hover {
 }
 @media (max-width: 768px) {
   .main .fotosIndex {
-    width: 50%;
+    width: 70%;
     height: 150px;
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
   .main .fotosIndex {
-    width: 70%;
+    width: 60%;
     height: 80px;
     font-size: 0.5rem;
   }
@@ -283,7 +410,7 @@ header .barraNav li a:hover {
 }
 .main .cajaClubes {
   border: solid rgb(59, 14, 14) 3px;
-  background-color: black;
+  background-color: rgb(5, 5, 54);
   width: 90%;
   font-size: 2rem;
   text-align: center;
@@ -304,7 +431,7 @@ header .barraNav li a:hover {
   }
 }
 .main .cajaClubes .clubLogo {
-  background-color: black;
+  background-color: rgb(57, 6, 6);
   border: solid rgb(255, 255, 255) 2px;
   height: 70px;
   margin: 10px;
@@ -327,7 +454,10 @@ header .barraNav li a:hover {
     height: 40px;
   }
 }
-.main .card {
+.main .cardNoticiasCentradas { /* creé esta section para que las cards queden centradas */
+  text-align: center;
+}
+.main .cardNoticiasCentradas .card {
   width: 350px;
   height: 700px;
   padding: 20px;
@@ -341,34 +471,37 @@ header .barraNav li a:hover {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
-.main .card:hover {
+.main .cardNoticiasCentradas .card:hover {
   opacity: 4;
   background-color: rgb(156, 177, 188);
   border-radius: 10%;
 }
-.main .card .card__titulo {
+.main .cardNoticiasCentradas .card .card__titulo {
   text-align: center;
   padding: 10px;
   font-weight: bold;
   font-size: 25px;
 }
-.main .card .card__description {
+.main .cardNoticiasCentradas .card .card__description {
   line-height: 1.2;
   font-size: 0.9rem;
 }
-.main .card .card__cajaImagen {
+.main .cardNoticiasCentradas .card .card__cajaImagen {
   text-align: center;
 }
-.main .card .card__img {
+.main .cardNoticiasCentradas .card .card__img {
   width: 200px;
   border-radius: 10px;
   padding: 15px;
 }
-.main .card a:hover {
+.main .cardNoticiasCentradas .card a:hover {
   color: red;
   font-style: italic;
 }
-.main .cardUrba {
+.main .cardClubesCentrados { /* creé esta section para que las cards queden centradas */
+  text-align: center;
+}
+.main .cardClubesCentrados .cardUrba {
   width: 300px;
   height: 700px;
   padding: 20px;
@@ -381,34 +514,37 @@ header .barraNav li a:hover {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
-.main .cardUrba:hover {
+.main .cardClubesCentrados .cardUrba:hover {
   opacity: 4;
   background-color: rgb(156, 177, 188);
   border-radius: 10%;
 }
-.main .cardUrba .card__titulo {
+.main .cardClubesCentrados .cardUrba .card__titulo {
   text-align: center;
   padding: 10px;
   font-weight: bold;
   font-size: 20px;
 }
-.main .cardUrba .card__description {
+.main .cardClubesCentrados .cardUrba .card__description {
   line-height: 1.2;
   font-size: 0.9rem;
 }
-.main .cardUrba .card__cajaImagen {
+.main .cardClubesCentrados .cardUrba .card__cajaImagen {
   text-align: center;
 }
-.main .cardUrba .card__logo {
+.main .cardClubesCentrados .cardUrba .card__logo {
   width: 75px;
   height: 75px;
   padding: 5px;
 }
-.main .cardUrba a:hover {
+.main .cardClubesCentrados .cardUrba a:hover {
   color: red;
   font-style: italic;
 }
-.main .cardFecha {
+.main .cardProxFechaCentradas {
+  text-align: center;
+}
+.main .cardProxFechaCentradas .cardFecha {
   width: 300px;
   height: 150px;
   padding: 10px;
@@ -424,21 +560,21 @@ header .barraNav li a:hover {
   text-align: center;
   justify-content: center;
 }
-.main .cardFecha:hover {
+.main .cardProxFechaCentradas .cardFecha:hover {
   opacity: 1;
   background-color: rgb(156, 177, 188);
   border-radius: 10%;
 }
-.main .cardFecha .card__logo {
+.main .cardProxFechaCentradas .cardFecha .card__logo {
   width: 75px;
   height: 75px;
   padding: 5px;
 }
-.main .cardFecha a:hover {
+.main .cardProxFechaCentradas .cardFecha a:hover {
   color: red;
   font-style: italic;
 }
-.main .cardFecha .fechaUrba {
+.main .cardProxFechaCentradas .cardFecha .fechaUrba {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .main table {
@@ -455,7 +591,8 @@ header .barraNav li a:hover {
   /* Responsive de la fecha disputada, para que no queden tan grandes las letras en tamaños más chicos de pantalla.*/
 }
 .main table th {
-  background-color: #f2f2f2;
+  background-color: rgb(31, 30, 30);
+  color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 25px;
 }
@@ -531,6 +668,7 @@ header .barraNav li a:hover {
 .main .puestosTabla {
   font-style: italic;
   color: black;
+  padding: 0;
 }
 @media (max-width: 768px) {
   .main .logoTabla {
@@ -564,6 +702,18 @@ header .barraNav li a:hover {
   text-align: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .main .campeonesUrba .fotosUrba {
+    width: 220px;
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .main .campeonesUrba .fotosUrba {
+    width: 150px;
+    height: 120px;
+  }
+}
 .main .formulario {
   color: rgb(5, 5, 54);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -584,15 +734,7 @@ header .barraNav li a:hover {
   font-style: italic;
   padding: 10px;
 }
-.main hr {
-  border: solid black 1, 5px;
-}
-.main .hrHistoria {
-  border: solid rgb(13, 26, 2) 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  margin: 50px;
-}
-.main .bordeCard { /* Este "hr" se utiliza, como lo dice el nombre de la clase, para separar el título del texto en las cards */
+.main .bordeCard {
   border: solid rgb(17, 2, 40) 3px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -617,8 +759,13 @@ footer {
 footer h3 {
   color: white;
 }
-footer a:hover {
+footer a {
+  text-decoration: none;
+  margin: 15px;
   color: red;
+}
+footer a:hover {
+  color: rgb(160, 143, 194);
   font-style: italic;
 }
 footer .logoRedes {
@@ -632,9 +779,7 @@ footer .logoRedes:hover {
 footer .redesSociales {
   text-align: center;
 }
-footer .barraNav {
-  color: white;
-  list-style-type: none;
+footer .navFooter { /* barra de navegación que está en el footer de cada página*/
   padding: 10px;
   margin: 25px auto;
   height: 40px;
@@ -643,21 +788,22 @@ footer .barraNav {
   flex-direction: row;
   justify-content: center;
 }
-footer .barraNav ul { /* le saqué el diseño predeterminado a las listas del menú*/
+footer .navFooter ul { /* le saqué el diseño predeterminado a las listas del menú*/
   list-style-type: none;
 }
-footer .barraNav li {
+footer .navFooter li {
   display: inline-block;
   text-align: center;
 }
-footer .barraNav li a {
+footer .navFooter li a {
   padding: 20px;
   margin: 10px;
   text-decoration: none;
-  color: rgb(160, 143, 194);
+  list-style-type: none;
+  color: white;
   text-align: center;
 }
-footer .barraNav li a:hover {
+footer .navFooter li a:hover {
   color: rgb(160, 143, 194);
   font-style: italic;
   transition: all 0, 5s;

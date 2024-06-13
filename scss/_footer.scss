@@ -6,8 +6,11 @@ footer {
         color: white;
     }
     a{
+        text-decoration: none;
+        margin: 15px;
+        color: red;
         &:hover{
-            color:red;
+            color:$hoverNav;
             font-style: italic;
         }
     }
@@ -22,9 +25,7 @@ footer {
     .redesSociales{
         text-align: center;
     }
-    .barraNav{
-        color: white;
-        list-style-type: none;
+    .navFooter{/* barra de navegación que está en el footer de cada página*/
         padding: 10px;
         margin: 25px auto;
         height: 40px;
@@ -42,7 +43,8 @@ footer {
                 padding:20px;
                 margin: 10px;
                 text-decoration: none;
-                color: $hoverNav;
+                list-style-type: none;
+                color: white;
                 text-align: center;
                 &:hover{
                     color: $hoverNav;

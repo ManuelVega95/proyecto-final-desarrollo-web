@@ -35,7 +35,17 @@ body{
     }
     h3{/* Texto del footer */
         text-align: center;
-        color: white;
+        color: $texth3;
+        @media screen and (max-width: 570px) {
+            font-size: 15px;
+            width: auto;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 460px) {
+            font-size: 12px;
+            width: auto;
+            flex-direction: column;
+        }
     }
     h4{/* Breve descripción del sitio en el header */
         text-align: center;
@@ -43,6 +53,7 @@ body{
         font-size: 30px;
         padding: 10px;
         color: $textNav;
+        font-weight: bold;
         @media screen and (max-width: 570px) {
             font-size: 15px;
             width: auto;

@@ -19,25 +19,41 @@
 <body>
     <!--Barra de Navegación-->
     <header>
-        <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
-        <div>
+        <div class="top">
+            <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
             <a href="./index.html">
                 <img class="logo" src="./fotos/Logo 2021 3.webp" alt="homeLogo">
-            </a> 
+            </a>
+            <h4>
+                Toda la información del rugby nacional e internacional
+            </h4> 
         </div>
-        <h4>
-            Toda la información del rugby nacional e internacional
-        </h4>
-		<nav class="barraNav">
-				<ul>
-					<li> <a href="./index.html">Home</a></li>
-					<li> <a href="./pages/nosotros.html">Nosotros</a></li>
-					<li> <a href="./pages/noticias.html">Noticias</a></li>
-                    <li> <a href="./pages/urba.html">URBA</a></li>
-                    <li> <a href="./pages/contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</header>
+        <div>
+            <nav class="navHeader">
+                <a href="./index.html">
+                    <img class="logoNav" src="./fotos/Pelota Rugby Urba.webp" alt="logoNav">
+                </a>
+                <label class="label_hamburguesa" for="menu_hamburguesa"> <!--Creo que dijeron que hay que evitar usar css en el html, pero no encontré otra manera de que funcionara el cambio de tamaño. Si borraba el width, height y fill de acá, no aparecía por más que lo pusiera en el scss-->
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="30"  
+                    height="40" 
+                    fill="currentColor" 
+                    class="list_icon" 
+                    viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </label> 
+                <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+                <ul class="ul_links">
+                    <li class="li_links"> <a href="./index.html" class="link">Home</a></li>
+                    <li> <a href="./pages/nosotros.html" class="link">Nosotros</a></li>
+                    <li> <a href="./pages/noticias.html" class="link">Noticias</a></li>
+                    <li> <a href="./pages/urba.html" class="link">URBA</a></li>
+                    <li> <a href="./pages/contacto.html" class="link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+	</header>
     <!--Main--->
     <main class="main">
         <section>
@@ -46,9 +62,8 @@
                 <img src="./fotos/Rugby.webp" alt="Rugby">
             </div>
         </section>
-        <hr>
         <!--Última fecha disputada del Top 12 de la URBA - Misma tabla que en la página URBA-->
-        <h2>Top 12 URBA - Fecha 9 - sábado 08 de junio del 2024</h2>
+        <h2>TOP 12 URBA - FECHA 9</h2>
         <table>
             <tbody>
                 <tr class="tablaGris">
@@ -97,46 +112,40 @@
         </table>
         <!--Sección con una de las últimas noticias--->
         <section class="ultimasNoticias">
-            <h2>Tras una intensa y disputada semifinal, Dogos XV jugará con Pampas la final del Super Rugby Americas 2024</h2>
+            <h2>HAY FINAL DEFINIDA PARA EL TORNEO SUDAMERICANO</h2>
             <div class = "noticias"> <span class="bold">Dogos XV jugará el próximo sábado la final del Súper Rugby Américas en el CASI</span> tras ganarle a 17-14 en una muy disputada semifinal, que se definió con un penal desde 45 metros en muerte súbita.
             </div>
             <div class="noticias">Por el otro lado, <span class="bold">el conjunto de Buenos Aires recibirá la final del segundo Súper Rugby Américas</span> al derrotar al campeón defensor Peñarol Rugby por 50-27.
             </div>
             <img class="fotosIndex" src="./fotos/Super Rugby.webp" alt="SuperRugbyAmericas">  
         </section>
-        <hr>
         <!--Sección con una introducción nuestra--->
         <section class="quienesSomos">
             <!--Quiénes somos-->
-            <h2 class = "main">Quiénes somos</h2>
+            <h2>¿QUIÉNES SOMOS?</h2>
             <p>Somos un grupo de amigos que formamos un programa de radio en 2016, enfocándonos en el rugby  nacional e internacional, y otros deportes. Podés escucharnos los sábados de 13 a 14 horas.</p>
         </section>
-        <hr>
         <section class="urbaTitulo">
-            <h2> Ir al sitio web de la URBA:</h2>
+            <h2>IR AL SITIO WEB OFICIAL DE LA URBA:</h2>
             <div class="urba">
                 <a href="https://www.urba.org.ar/" target="_blank"><img src="./fotos/Urba 2.webp" class="urbaLogo" alt="URBA"></a>
             </div>
         </section>
-        <hr>
         <section class="efemerides">
             <!--Efemérides-->
-            <h2 class = t1>Efemérides</h2>
-            <p class = "p2">
+            <h2>EFEMÉRIDES</h2>
+            <p>
                 Recordá el gran triunfo de Los Pumas vs Nueva Zelanda del 2022 por 25-18 acá:
             </p>
             <div class="iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RE85OEm8C1M?si=QowkHqLeG5a1-ey2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
-        <hr>
     </main>
-    <hr>
     <footer class="footer">
         <!--Footer-->
         <h3>Contactanos al 011******  <img class = "logoRedes" src="./fotos/wsp.webp" alt="wsp"> </h3>
         <h3>O podés enviándonos un mail a urbanizados@hotmail.com</h3>
-        <hr>
         <h3>Seguinos en nuestras redes sociales:
             <div class="redesSociales">
                 <img class="logoRedes" src="./fotos/tw.webp" alt="Twitter"> <a href="https://www.twitter.com" target="_blank">Twitter</a>
@@ -145,7 +154,7 @@
                 <img class="logoRedes" src="./fotos/yt.webp" alt="YouTube"> <a href="https://www.youtube.com" target="_blank">Youtube</a>
             </div>
         </h3>
-        <nav class="barraNav">
+        <nav class="navFooter">
             <ul>
                 <li> <a href="./index.html">Home</a></li>
                 <li> <a href="./pages/nosotros.html">Nosotros</a></li>

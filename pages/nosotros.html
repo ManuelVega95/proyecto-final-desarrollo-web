@@ -21,7 +21,8 @@
 <body>
     <!--Barra de Navegación-->
   <header>
-    <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
+    <div class="top">
+      <h1 class="animate__animated animate__backInDown">URBAnizados</h1>
     <div>
       <a href="../index.html">
         <img class="logo" src="../fotos/Logo 2021 3.webp" alt="homeLogo">
@@ -30,17 +31,34 @@
     <h4>
       Toda la información del rugby nacional e internacional
     </h4>
-    <nav class="barraNav">
-      <ul>
-        <li> <a href="../index.html">Home</a></li>
-        <li> <a href="./nosotros.html">Nosotros</a></li>
-        <li> <a href="./noticias.html">Noticias</a></li>
-        <li> <a href="./urba.html">URBA</a></li>
-        <li> <a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    </div>
+    <div>
+      <nav class="navHeader">
+          <a href="../index.html">
+              <img class="logoNav" src="../fotos/Pelota Rugby Urba.webp" alt="logoNav">
+          </a>
+          <label class="label_hamburguesa" for="menu_hamburguesa"> <!--Creo que dijeron que hay que evitar usar css en el html, pero no encontré otra manera de que funcionara el cambio de tamaño. Si borraba el width, height y fill de acá, no aparecía por más que lo pusiera en el scss-->
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              width="30"  
+              height="40" 
+              fill="currentColor" 
+              class="list_icon" 
+              viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+          </label> 
+          <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+          <ul class="ul_links">
+              <li class="li_links"> <a href="../index.html" class="link">Home</a></li>
+              <li> <a href="./nosotros.html" class="link">Nosotros</a></li>
+              <li> <a href="./noticias.html" class="link">Noticias</a></li>
+              <li> <a href="./urba.html" class="link">URBA</a></li>
+              <li> <a href="./contacto.html" class="link">Contacto</a></li>
+          </ul>
+      </nav>
+  </div>
   </header>
-    <!--Clase para tener encolumnados distintos textos, para probar un poco de Grid con Bootstrap--->
+    <!--Clase para tener encolumnados distintos textos, para probar un poco de Grid con Bootstrap aunque no me gusta como queda el texto en responsive--->
     <main  class="main">
         <div class="row bg-transparent border border-black p-3">
             <h2 class="text-black">Otros deportes de nuestro interés</h2>
@@ -67,7 +85,7 @@
                 <p class="text-black "mx-auto style=" text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;">Somos un grupo de amigos que formamos un programa de radio en 2016, enfocándonos en el rugby nacional e internacional, y otros deportes. Escuchanos todos los sábados de 13 a 14 horas por Radio FM Lares 104.7</p>
             </div>
         </div>
-        <!--Galería muy básica con 3 imágenes para probar el carrusel con Bootstrap--->
+        <!--Galería muy básica con 3 imágenes para probar el carrusel con Bootstrap, pero quedan muy chicas con el responsive y no pude arreglarlo, pido disculpas por lo mal que queda--->
         <section class="galeria">
             <div id="carouselExampleIndicators" class="carousel slide w-50 p-5 m-auto" data-bs-ride="carousel">
                 <div class="carousel-indicators d-block">
@@ -97,12 +115,10 @@
               </div>
         </section>
     </main>
-    <hr>
     <footer>
         <!--Footer-->
         <h3>Contactanos al 011******  <img class = "logoRedes" src="../fotos/wsp.webp" alt="wsp"> </h3>
         <h3>O podés enviándonos un mail a urbanizados@hotmail.com</h3>
-        <hr>
         <h3>Seguinos en nuestras redes sociales:
             <div class="redesSociales">
               <img class="logoRedes" src="../fotos/tw.webp" alt="Twitter"> <a href="https://www.twitter.com" target="_blank">Twitter</a>
@@ -111,7 +127,7 @@
               <img class="logoRedes" src="../fotos/yt.webp" alt="YouTube"> <a href="https://www.youtube.com" target="_blank">Youtube</a>
             </div>
           </h3>
-          <nav class="barraNav">
+          <nav class="navFooter">
             <ul>
               <li> <a href="../index.html">Home</a></li>
               <li> <a href="./nosotros.html">Nosotros</a></li>
