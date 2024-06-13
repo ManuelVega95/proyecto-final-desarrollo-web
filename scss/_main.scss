@@ -287,28 +287,30 @@
         padding: 10px;
         margin: 0 auto;
         width: 95%;
+        font-size: 20px;
         border-collapse: collapse;
         justify-content: center;
-        @media (max-width: 768px) {
-            display: block;
-            font-size: 20px;
-            }
-        @media (max-width: 576px) {
-            display: block;
-            font-size: 15px;
-        }
         th {
             background-color: #f2f2f2;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 25px;
+            @media (max-width: 768px) {
+                font-size: 12px;
+                }
+            @media (max-width: 576px) {
+                font-size: 8px;
+            }
         }
         th, td {
             border: solid #150000 1px;
             padding: 5px;
             text-align: center;
             @media (max-width: 768px) {
-                font-size: 5px;
+                font-size: 12px;
                 }
+            @media (max-width: 576px) {
+                font-size: 8px;
+            }
         }
         .tablaBlanco{
             background-color: rgb(196, 191, 191);
