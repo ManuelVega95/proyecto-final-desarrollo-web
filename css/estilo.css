@@ -134,7 +134,7 @@ header .top .logo { /* logo de la página, que al apretarlo te lleva al inicio *
   }
 }
 header .navHeader {
-  height: 170px;
+  height: 130px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -334,11 +334,6 @@ header .barraNav li a:hover {
   text-align: center;
   color: black;
   font-size: 20px;
-}
-.main .noticias {
-  color: black;
-  text-align: center;
-  padding: 10px;
 }
 .main .historiaUrba {
   text-align: center;
